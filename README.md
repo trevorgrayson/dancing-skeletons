@@ -3,4 +3,4 @@
 Eventually trying to animate Disney Skeletons that sync with your motion.
 
 
-Look at the `dancing` module, everything else is stolen.
+Look at the `dancin

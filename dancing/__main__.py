@@ -2,7 +2,7 @@ from . import *
 
 
 def skeletons(img, lmList):
-    skull = Image.open("skull.png").convert('RGB')
+    skull = Image.open("skull.png").convert('RGBA')
 
     shoulder_l = lmList[12][1:]
     eye_l = lmList[5][1:]
@@ -16,7 +16,7 @@ def skeletons(img, lmList):
 
     skull_resized = skull.resize((head_height,head_width))
     img.paste(skull_resized, (ear_l[0] - floor(head_width*0.1),
-                              ear_l[1] - floor(head_height*0.7)))  # 100 is half of skull height
+                              ear_l[1] - floor(head_height*0.7)), mask=skull_resized)  # 100 is half of skull height
 
 
 def human_detected(lmList):

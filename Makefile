@@ -3,8 +3,8 @@ VENV?=venv
 
 export PYTHONPATH = .:$(VENV)
 
-test: compile
-	$(PYTHON) -m pytest $(TEST)
+run: compile
+	$(PYTHON) -m dancing
 
 integ: compile
 	$(PYTHON) -m pytest -o pytest.integ.ini $(TEST)
