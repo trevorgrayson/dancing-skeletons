@@ -1,3 +1,6 @@
-# ai-media-pipe
--- video download
-www.pexels.com
+# dancing skeletons
+
+Eventually trying to animate Disney Skeletons that sync with your motion.
+
+
+Look at the `dancing` module, everything else is stolen.
